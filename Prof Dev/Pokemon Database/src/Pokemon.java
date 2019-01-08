@@ -1,10 +1,10 @@
 
-public class Pokemon {
+public class Pokemon { //declare variables
 	private int p_id;
 	private String p_name;
 	private int p_height;
 	private int p_weight;
-	private String p_ptype;
+	private String p_ptype;    
 	private String p_stype;
 	private String p_generation;
 	private String p_ability1;
@@ -15,6 +15,7 @@ public class Pokemon {
 			String p_ptype, String p_stype, String p_generation,
 			String p_ability1, String p_ability2, String p_species)
 	{
+		//initialise variabless
 		this.p_id = p_id;
 		this.p_name = p_name;
 		this.p_height = p_height;
@@ -27,7 +28,7 @@ public class Pokemon {
 		this.p_species = p_species;
 		
 	}
-
+	//create getters and setters
 	public int getP_id() {
 		return p_id;
 	}
@@ -108,6 +109,7 @@ public class Pokemon {
 		this.p_species = p_species;
 	}
 
+	//write toString method
 	@Override
 	public String toString() {
 		return "Pokemon [p_id=" + p_id + ", p_name=" + p_name + ", p_height=" + p_height + ", p_weight=" + p_weight
